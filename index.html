@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basement JiuJitsu
     </title>
+    <style>
+        body {
+            background-color: aliceblue;
+            margin: 0;
+
+        }
+
+        nav {
+            background-color: rgb(150, 209, 211);
+            color: black;
+            font-size: 1.5em;
+            font-family: sans-serif;
+        }
+
+        .menus {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .label {
+            padding: 15px;
+            border-right: 1px solid grey;
+        }
+
+        .label:hover {
+            background-color: rgb(103, 167, 168);
+            cursor: pointer;
+        }
+
+        #middler {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+
+        }
+        #chester, #lefter, #righter{
+            padding: 15px;
+        }
+        #chester {
+            background-color: burlywood;
+            width:60%;
+
+        }
+        #lefter{
+            background-color: chocolate;
+            width: 20%;
+
+        }
+        #righter{
+            background-color: crimson;
+            width: 20%;
+
+        }
+    </style>
 </head>
+
 <body>
-    hello there
+    <nav>
+        <ul class="menus">
+            <li class="menu">
+                <div class="label">About</div>
+            </li>
+            <li class="menu">
+                <div class="label">Sign Up</div>
+            </li>
+            <li class="menu">
+                <div class="label">Contact Us</div>
+            </li>
+        </ul>
+    </nav>
+    <div id="middler">
+        <aside id="lefter">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur neque explicabo vero.
+                Veritatis laudantium eaque minima, consequatur delectus tempora doloribus dolorem itaque ipsum autem
+                similique, impedit nulla. Aspernatur, qui!</p>
+            <p>Officiis laboriosam, ratione sunt accusantium quibusdam iure repellendus quia velit recusandae in dicta
+                sint molestias perferendis iusto ab odit commodi? Eos ex, voluptas illo cumque velit eum odit rem odio!
+            </p>
+            <p>Voluptas eveniet a vero? Dicta ipsam, molestias aliquid quo ullam quod fuga quos asperiores nihil cumque
+                fugiat explicabo excepturi. Adipisci ducimus corrupti iste eveniet! Facilis quisquam harum officia alias
+                accusantium.</p>
+            <p>Nobis quisquam commodi quo cum dolores earum fuga accusantium molestias eligendi vero quod culpa,
+                deserunt omnis perspiciatis quibusdam amet et excepturi voluptates saepe maxime, voluptas nesciunt illum
+                nihil. Vero, fugiat.</p>
+            <p>Mollitia qui culpa praesentium necessitatibus modi nostrum tempore eum ipsum accusantium at nam suscipit
+                incidunt aut temporibus maxime itaque ipsam quam eius assumenda, optio quos quod. Assumenda praesentium
+                cum nobis!</p>
+        </aside>
+        <main id="chester">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, reiciendis non et quaerat
+                consequuntur cupiditate laudantium voluptas voluptatum atque tempore modi sapiente mollitia nobis
+                assumenda pariatur adipisci eum earum itaque.</p>
+            <p>Commodi quae dolorum dignissimos perferendis neque rerum doloremque tenetur inventore? Cupiditate
+                officiis dolor quos impedit excepturi maxime odio enim quasi, reprehenderit ex ducimus consequatur
+                facilis rerum nihil quis iste nisi?</p>
+            <p>Ducimus nihil animi cupiditate harum unde voluptatibus, laboriosam minus tempora at placeat debitis magni
+                quaerat autem ut in ipsum culpa optio. Quas dolores ad iste! Officia eligendi autem ea pariatur.</p>
+            <p>Ullam placeat quod et ipsam. Facere quia autem consequatur rerum odit necessitatibus, ipsa quam libero
+                quas modi eos incidunt saepe error unde, omnis placeat similique temporibus odio impedit. Perspiciatis,
+                maxime.</p>
+            <p>Non voluptas temporibus ut voluptatibus ducimus qui, iusto dignissimos odit cumque pariatur! Dolor vel,
+                est modi, quidem recusandae quis obcaecati veritatis nisi voluptate placeat tenetur ut quam! Odit, vel
+                deleniti.</p>
+        </main>
+
+        <aside id="righter">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias nam sint, quis veniam obcaecati
+                molestiae.</p>
+            <p>Dignissimos tempora sed ad nostrum vel veniam est a quisquam, architecto illo, ipsum reiciendis placeat!
+            </p>
+            <p>Rerum fugit voluptatum numquam ea odio dolor nulla repellat ipsam? Perspiciatis alias dolorum provident.
+                Odit?</p>
+            <p>Quam ipsa corrupti, dicta rerum accusamus iure assumenda modi dolor ut quisquam minus sed fugit.</p>
+            <p>Aspernatur suscipit excepturi omnis dolorem soluta nam illo! Facere rerum magni quas nostrum nulla sint.
+            </p>
+        </aside>
+
+    </div>
 </body>
+
 </html>
