@@ -20,7 +20,7 @@
             font-family: sans-serif;
         }
 
-        .menus {
+        nav > ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -28,14 +28,20 @@
             flex-direction: row;
         }
 
-        .label {
+        nav > ul > li > a{
+            display: block;
+            text-decoration: none;
+            color: black;
             padding: 15px;
-            border-right: 1px solid grey;
+            border-right: black solid 1px;
         }
 
-        .label:hover {
+        nav > ul > li > a:hover {
             background-color: rgb(103, 167, 168);
             cursor: pointer;
+        }
+        nav > ul > li > a:active {
+            background-color: rgb(103, 120, 168);
         }
 
         #middler {
@@ -68,14 +74,17 @@
 <body>
     <nav>
         <ul class="menus">
-            <li class="menu">
-                <div class="label">About</div>
+            <li >
+                <a href="about.html">About</a>
             </li>
-            <li class="menu">
-                <div class="label">Sign Up</div>
+            <li >
+                <a href="signup.html" >Sign Up</a>
             </li>
-            <li class="menu">
-                <div class="label">Contact Us</div>
+            <li >
+                <a href="contactus.html">Contact Us</a>
+            </li>
+            <li >
+                <a href="schedule.html">Schedule</a>
             </li>
         </ul>
     </nav>
