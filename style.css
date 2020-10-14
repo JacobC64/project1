@@ -1,0 +1,145 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+  
+
+}
+
+nav {
+    background-color: rgb(150, 209, 211);
+    color: black;
+    font-size: 1.5em;
+    font-family: sans-serif;
+   
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+
+
+}
+
+nav > ul > li > a:hover {
+    background-color: rgb(103, 167, 168);
+    cursor: pointer;
+}
+nav > ul > li > a:active {
+    background-color: rgb(103, 120, 168);
+}
+
+#middler {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+}
+#chester, #lefter, #righter{
+    padding: 15px;
+}
+#chester {
+    background-color: aliceblue;
+    width:60%;
+
+}
+#lefter{
+    background-color:  rgb(218, 224, 230);
+    width: 20%;
+    display: block;
+}
+#righter{
+    background-color: rgb(218, 224, 230);
+    width: 20%;
+
+}
+header{
+    background-color: rgb(150, 209, 211);
+    
+
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+}
+
+footer{
+    background-color: rgb(150, 209, 211);
+    font-size: 2em;
+    width: 100%;
+    display: block;
+}
+iframe{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+#menu-button{
+    display: none;
+}
+@media(max-width: 700px){
+    #middler{
+        display: block;
+    }
+    #lefter, #righter, #chester{
+        width: 100vw;        
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: sticky;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    nav{
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+    nav > ul{
+        flex-direction: column;
+    }
+    nav > ul > li{
+        border-top: 2px solid lightblue;
+    }
+    #menu-button{
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center; 
+    }
+    #menu-button:hover{
+        background-color: grey;
+    }
+    h1{
+        padding-left: 10px;
+        margin: 0;
+
+    }
+    
+    footer{
+        display: none;
+    }
+ 
+    
+   
+}
