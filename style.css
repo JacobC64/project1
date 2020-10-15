@@ -1,5 +1,4 @@
 body {
-    background-color: aliceblue;
     margin: 0;
 }
 
@@ -8,7 +7,6 @@ nav {
     color: black;
     font-size: 1.5em;
     font-family: sans-serif;
-
    
 }
 
@@ -26,8 +24,6 @@ nav > ul > li > a{
     text-decoration: none;
     color: black;
     padding: 15px;
-
-
 }
 
 nav > ul > li > a:hover {
@@ -50,18 +46,22 @@ nav > ul > li > a:active {
 }
 #chester {
     background-color: aliceblue;
-    width:60%;
+    width:50%;
 
 }
 #lefter{
     background-color:  rgb(218, 224, 230);
-    width: 20%;
+    width: 25%;
     display: block;
+
 }
 #righter{
     background-color: rgb(218, 224, 230);
-    width: 20%;
-
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 header{
     background-color: rgb(150, 209, 211);
@@ -81,6 +81,7 @@ footer{
     background-color: rgb(150, 209, 211);
     font-size: 2em;
     width: 100%;
+    height: 10vh;
     display: block;
 }
 iframe{
@@ -93,6 +94,82 @@ iframe{
 #menu-button{
     display: none;
 }
+
+#wrapper {
+    width: 3000px;
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s ease-in-out;
+
+}
+#content-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content {
+    float: left;
+    width: 550px;
+    height: 550px;
+    white-space: normal;
+    background-repeat: no-repeat;
+}
+#item-one {
+    background-image: url("https://i.ibb.co/c3F63dm/Full-Size-R1-1.jpg");
+    background-size: auto auto;
+}
+#item-two {
+    background-image: url("https://i.ibb.co/27TSL5d/Full-Size-R2.jpg");
+    background-size: auto auto;
+
+}
+#item-three {
+    background-image: url("https://i.ibb.co/qmgwjd4/Full-Size-R3.jpg");
+    background-size: auto auto;
+
+}
+#item-four {
+    background-image: url("https://i.ibb.co/z6NSP9n/IMG-91391.jpg");
+    background-size: auto auto;
+
+}
+#item-five {
+    background-image: url("https://i.ibb.co/GPg7hpJ/IMG-91421.jpg");
+    background-size: auto auto;
+
+}
+
+#navLinks {
+    text-align: center;
+}
+    #navLinks > ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: 6px;
+    }
+        #navLinks > ul > li {
+            float: left;
+            text-align: center;
+            margin: 5px;
+            list-style: none;
+            cursor: pointer;
+            background-color: #CCCCCC;
+            padding: 5px;
+            border-radius: 50%;
+            border: black 5px solid;
+        }
+            #navLinks > ul > li:hover {
+                background-color: #FFFF00;
+            }
+            #navLinks > ul > li.active {
+                background-color: #333333;
+                color: #FFFFFF;
+                outline-width: 7px;
+            }
+                #navLinks > ul > li.active:hover {
+                    background-color: #484848;
+                    color: #FFFFFF;
+                }
 @media(max-width: 700px){
     #middler{
         display: block;
@@ -123,6 +200,10 @@ iframe{
         position: absolute;
         top: 100%;
         right: 0;
+        display: none;
+    }
+    nav.open{
+        display: block;
     }
     nav > ul{
         flex-direction: column;
