@@ -4,35 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 
     <title>Sign Up</title>
 </head>
 <body>
     <header>
-        Sign Up
-    </header>
-    <nav>
-        <ul class="menus">
-            <li >
-                <a href="index.html">Home</a>
-            </li>
-            <li >
-                <a href="about.html">About</a>
-            </li>
-            <li >
-                <a href="contactus.html">Contact Us</a>
-            </li>
-            <li >
-                <a href="schedule.html">Schedule</a>
-            </li>
-            <li >
-                <a href="gallery.html">Gallery</a>
-            </li>
+        <h1>Sign Up</h1>
+        
+    
+    <div id="menu-button"> <svg viewBox="0 0 100 80" width="30" height="30">
+        <rect fill="white" width="100" height="15"></rect>
+        <rect fill="white" y="30" width="100" height="15"></rect>
+        <rect fill="white" y="60" width="100" height="15"></rect>
+    </svg></div>
+
+    <div id="main">
+        <nav id="navigation">
+            <ul class="menus">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                
+                <li>
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="schedule.html">Schedule</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+</header>
+<div id="middler">
+    <aside id="lefter">
+        <h3>Our Schedule Quickveiw
+        </h3>
+
+        <iframe id="leftCal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York
+        &amp;src=NThtNGYyaTIxMjY3ZDJyZ2x2ZjFoMWVnMHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%237986CB&amp;showTitle=0&amp;showNav=0
+            &amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=1&amp;mode=AGENDA"
+            style="border-width:0" width="250" height="500" frameborder="0" scrolling="no"></iframe>
+        <h3>Typical Hours of Operation 8:00am - 10:00pm</h3>
+        <h3>Walk-ins Welcome!</h3>
+
+
+    </aside>
+    <main id="chester">
+        <h2>Get one free class on sign up!</h2>
+        <div id="signup">
+            
+        <label for="name">Name</label>
+       <input type="text" id="name" autocomplete="off">
+       <label for="email">Email</label>
+       <input type="email" id="email" autocomplete="off">
+       <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <label for="classes">Class</label>
+        <select id="classes">
+            <option value="">BJJ</option>
+            <option value="">Muay Thai</option>
+            <option value="">Boxing</option>
+            <option value="">Wrestling</option>
+            <option value="">Tai Chi</option>
+            <option value="">Wing Chung</option>
+            <option value="">Yoga</option>
+            <option value="">Secret Techniques</option>
+           </select>
+            <label for="comment">Questions/comments</label>
+            <textarea  id="comment"></textarea>
+        <button id="send">Send</button>
+    </div>
+
+    </main>
+
+    <aside id="righter">
+   
+        <div id=content-container>
+            <div id="wrapper">
+                <div id="item-one" class="content">
+
+                </div>
+                <div id="item-two" class="content">
+
+                </div>
+                <div id="item-three" class="content">
+
+                </div>
+                <div id="item-four" class="content">
+
+                </div>
+                <div id="item-five" class="content">
+
+                </div>
+            </div>
+        </div>
+    <div id="navLinks">
+        <ul>
+            <li class="itemLinks" data-pos="0px"></li>
+            <li class="itemLinks" data-pos="-550px"></li>
+            <li class="itemLinks" data-pos="-1100px"></li>
+            <li class="itemLinks" data-pos="-1650px"></li>
+            <li class="itemLinks" data-pos="-2200px"></li>
+
         </ul>
-    </nav> <footer>
-        this goes at the bottom
+    </div>
+</aside>  </div>
+    <footer>
+        (703) 932 - 6008 2351 S. 8th Street Arlington Virginia
     </footer>
+
+    </div>
 </body>
-  
+  <style>
+      #signup{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        font-family: sans-serif;
+        max-width: 600px;
+        gap: 50px 5px;
+      }
+      label{
+          justify-self: end;
+      }
+      #send{
+          grid-column: 2;
+          justify-self: start;
+      }
+      #message{
+          height: 300px;
+      }
+      @media (max-width: 700px) {
+          #signup{
+              grid-template-columns: 1fr;
+              gap: 0;
+          }
+          #send{
+              grid-column: 1;
+          }
+          label:not(:first-child), #send{
+              margin-top: 10px;
+          }
+          label{
+              justify-self: start;
+          }
+      }
+  </style>
      
 </html>

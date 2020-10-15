@@ -1,39 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 
     <title>Schedule</title>
 </head>
+
 <body>
     <header>
-        Schedule
+        <h1>Schedule</h1>
+
+        <div id="menu-button"> <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect fill="white" width="100" height="15"></rect>
+                <rect fill="white" y="30" width="100" height="15"></rect>
+                <rect fill="white" y="60" width="100" height="15"></rect>
+            </svg></div>
+
+
+        <div id="main">
+            <nav id="navigation">
+                <ul class="menus">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
     </header>
-    <nav>
-        <ul class="menus">
-            <li >
-                <a href="index.html">Home</a>
-            </li>
-            <li >
-                <a href="about.html">About</a>
-            </li>
-            <li >
-                <a href="signup.html" >Sign Up</a>
-            </li>
-            <li >
-                <a href="contactus.html">Contact Us</a>
-            </li>
-            
-            <li >
-                <a href="gallery.html">Gallery</a>
-            </li>
-        </ul>
-    </nav>
+    <div id="middler">
+        <aside id="lefter">
+            <h2>Basement JiuJitsu's monthly schedule</h2>
+            <p>
+            <h3>Typical Hours of Operation 8:00am - 10:00pm</h3>
+            <h3>Walk-ins Welcome!</h3>
+            </p>
+            <p>
+                Here you can see the classes that are planned to be held on a monthly basis and if you like
+                you can plan your membership by month!
+            </p>
+
+            <p>
+                Times may be affected by certain federal holidays.
+            </p>
+
+
+        </aside>
+        <main id="chester">
+            <iframe id="schedule"
+                src="https://calendar.google.com/calendar/embed?height=700&amp;wkst=2&amp;bgcolor=%23039BE5&amp;ctz=America%2FNew_York&amp;src=NThtNGYyaTIxMjY3ZDJyZ2x2ZjFoMWVnMHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23009688&amp;showPrint=1&amp;showTitle=1&amp;showTabs=1&amp;title=BasementJJ%20Class%20Schedule"
+                style="border:solid 1px #777" frameborder="0" scrolling="no"></iframe>
+        </main>
+
+        <aside id="righter">
+
+            <div id=content-container>
+                <div id="wrapper">
+                    <div id="item-one" class="content">
+
+                    </div>
+                    <div id="item-two" class="content">
+
+                    </div>
+                    <div id="item-three" class="content">
+
+                    </div>
+                    <div id="item-four" class="content">
+
+                    </div>
+                    <div id="item-five" class="content">
+
+                    </div>
+                </div>
+            </div>
+            <div id="navLinks">
+                <ul>
+                    <li class="itemLinks" data-pos="0px"></li>
+                    <li class="itemLinks" data-pos="-550px"></li>
+                    <li class="itemLinks" data-pos="-1100px"></li>
+                    <li class="itemLinks" data-pos="-1650px"></li>
+                    <li class="itemLinks" data-pos="-2200px"></li>
+
+                </ul>
+            </div>
+        </aside>
+    </div>
     <footer>
-        this goes at the bottom
+        (703) 932 - 6008 2351 S. 8th Street Arlington Virginia
     </footer>
+
+    </div>
 </body>
-  
+
 </html>
