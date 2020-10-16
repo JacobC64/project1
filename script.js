@@ -82,3 +82,13 @@ function goToNextItem() {
     var newLink = links[activeLink];
     changePosition(newLink);
 }
+
+const sendButton = document.getElementById("send");
+const chestText = document.getElementById("chester");
+const signForm = document.getElementById("signup");
+
+sendButton.addEventListener('click', () =>{
+    signForm.remove();
+    chestText.append("Thank you for signing up! You may redeem your free class whenever!");
+    
+});
