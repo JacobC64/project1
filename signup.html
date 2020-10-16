@@ -7,7 +7,48 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/jhX9KtJ/android-chrome-512x512.png">
     <script defer src="script.js"></script>
-
+    <style>
+        #signup {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            font-family: sans-serif;
+            max-width: 600px;
+            gap: 50px 5px;
+        }
+    
+        label {
+            justify-self: end;
+        }
+    
+        #send {
+            grid-column: 2;
+            justify-self: start;
+        }
+    
+        #message {
+            height: 300px;
+        }
+    
+        @media (max-width: 700px) {
+            #signup {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+    
+            #send {
+                grid-column: 1;
+            }
+    
+            label:not(:first-child),
+            #send {
+                margin-top: 10px;
+            }
+    
+            label {
+                justify-self: start;
+            }
+        }
+    </style>
     <title>Sign Up</title>
 </head>
 
@@ -126,47 +167,7 @@
     </footer>
 
 </body>
-<style>
-    #signup {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        font-family: sans-serif;
-        max-width: 600px;
-        gap: 50px 5px;
-    }
 
-    label {
-        justify-self: end;
-    }
 
-    #send {
-        grid-column: 2;
-        justify-self: start;
-    }
-
-    #message {
-        height: 300px;
-    }
-
-    @media (max-width: 700px) {
-        #signup {
-            grid-template-columns: 1fr;
-            gap: 0;
-        }
-
-        #send {
-            grid-column: 1;
-        }
-
-        label:not(:first-child),
-        #send {
-            margin-top: 10px;
-        }
-
-        label {
-            justify-self: start;
-        }
-    }
-</style>
 
 </html>
